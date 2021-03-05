@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;1,600&display=swap');
+
+:root {
+    /* PRIMARY COLORS */
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+
+    /* SECONDARY COLORS */
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-grayish-blue);
+    max-width: 1440px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px;
+    margin-top: 3rem;
+}
+
+.cards {
+    border-radius: 10px;
+   
+   
+}
+
+.cards h5  {
+    margin: -2rem 0 0 5.5rem;
+}
+
+h3, h5 {
+    color: var(--white);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+}
+
+small {
+    color: var(--light-gray);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: -1rem 0 0 5.5rem;
+    opacity: 50%;
+}
+
+h5 {
+    margin-top: -1rem;
+}
+
+p {
+    color: var(--light-grayish-blue);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+img {
+    border-radius: 50px;
+    border: 2px solid var(--white);
+    margin: 2rem 0 0 2rem;
+    width: 35px;
+    height: 35px;
+}
+
+.card_1 {
+    background-color: var(--moderate-violet);
+    width: 530px;
+    height: 250px;
+    margin: 0 0 0 4rem;
+    background-position: 23rem 0;
+    background-repeat: no-repeat;
+    background-image: url('../images/bg-pattern-quotation.svg');
+}
+
+.card_1 img {
+    border: 2px solid var(--light-gray);
+    opacity: 75%;
+}
+
+.card_1 p {
+    color: var(--light-gray);
+    margin: 1rem 0 0 2rem;
+    opacity: 50%;
+
+}
+
+.card_1 h3, h5 {
+    margin-left: 2rem;
+}
+
+.card_2 {
+    background-color: var(--very-dark-grayish-blue);
+    margin: 0 0 0 2rem;
+    height: 255px;
+    width: 260px;
+}
+
+.card_2 h3 {
+     margin: 1rem 0 0 2rem;   
+}
+
+.card_2 p {
+    color: var(--light-gray);
+    margin: 0.5rem 0 0 2rem;
+}
+
+.card_3 {
+   background-color: var(--white);
+   box-shadow: 0px 11px 36px -5px rgba(0,0,0,0.45);
+   -webkit-box-shadow: 0px 11px 36px -5px rgba(0,0,0,0.45);
+   -moz-box-shadow: 0px 11px 36px -5px rgba(0,0,0,0.45);
+   margin: 0.2rem 0 0 -7rem;
+   width: 270px;
+   height: 545px;
+}
+
+/* opacity colors */
+.card_3 h3 {
+    color: var(--very-dark-grayish-blue);
+    margin: 0 0 0 2rem;
+}
+
+.card_3 p {
+    color: var(--very-dark-grayish-blue);
+    margin: 1.5rem 0 0 2rem;
+    opacity: 50%;
+}
+
+.card_3 h5 {
+    color: var(--very-dark-grayish-blue);
+    opacity: 50%;
+}
+
+.card_4 {
+    box-shadow: 0px 11px 36px -5px rgba(0,0,0,0.74);
+    -webkit-box-shadow: 0px 11px 36px -5px rgba(0,0,0,0.74);
+    -moz-box-shadow: 0px 11px 36px -5px rgba(0,0,0,0.74);
+    background-color: var(--white);
+    margin: 5rem 0 0 4rem;
+    width: 280px;
+}
+
+.card_4 h5 {
+    color: var(--very-dark-blackish-blue);
+    margin: -2.5rem 0 0 5rem;
+}
+
+.card_4 h3 {
+    color: var(--very-dark-grayish-blue);
+    margin: 1.5rem 0 0 2.5rem;
+}
+
+.card_4 p {
+    color: var(--very-dark-grayish-blue);
+    line-height: 1.7em;
+    margin: 1rem 0 0 2.5rem;
+    opacity: 50%;
+}
+
+.card_4 img {
+    margin: 1rem 0 0 2rem;
+}
+.card_5 {
+    background-color: var(--very-dark-blackish-blue);
+    margin: 5rem 9rem 0 -13rem;
+    width: 500px;
+    height: 270px;
+}
+
+.card_5 h3 {
+    margin: 0 0 0 2rem;
+}
+
+.card_5 p {
+    color: var(--light-grayish-blue);
+    margin: 1.5rem 0 0 2rem;    
+    opacity: 50%;
+}
+
+.attribution {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card_1 {
+        background-position: 13rem 0;
+        background-repeat: no-repeat;
+        background-image: url('../images/bg-pattern-quotation.svg');
+        margin: 3rem -2rem 0 0;
+        width: 330px;
+        height: 390px;
+    }
+
+    .card_2 {
+        margin: 2rem 0 0 2rem;
+        height: 255px;
+        width: 337px;
+    }
+
+    .card_3 {
+        margin: 2rem 0 0 2rem;
+        height: 410px;
+        width: 337px;
+    }
+
+    .card_4 {
+        margin: 2rem 0 0 2rem;
+        height: 255px;
+        width: 337px;
+    }
+
+    .card_5 {
+        margin: 3rem -2rem 0 0;
+        width: 338px;
+        height: 390px;
+    }
+}
