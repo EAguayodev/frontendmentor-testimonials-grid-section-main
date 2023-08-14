@@ -203,6 +203,10 @@ img {
         align-items: center;
     }
 
+    .cards{
+         margin: 3rem -2rem 0 0;
+    }
+
     .card_1 {
         background-position: 13rem 0;
         background-repeat: no-repeat;
