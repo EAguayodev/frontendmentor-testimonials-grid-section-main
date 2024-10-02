@@ -21,6 +21,8 @@
 body {
     background-color: var(--light-grayish-blue);
     max-width: 1440px;
+    margin: auto;
+    padding: auto;
 }
 
 .container {
